@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
   opacity: 0;
   transition: .3s all ease-in-out;
@@ -91,7 +91,8 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .item .item-wrap > .work-info {
   position: absolute;
   top: 50%;
-  width: 100%;
+  left: 2%;
+  width: 96%;
   text-align: center;
   z-index: 3;
   transform: translateY(-50%);
@@ -102,6 +103,52 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   transition: .3s all ease;
 }
 
+.item .item-wrap > .platform-info {
+  position: absolute;
+  top: 92%;
+  left: 2%;
+  width: 100%;
+  text-align: left;
+  z-index: 3;
+  transform: translateY(-50%);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all ease;
+}
+
+.item .item-wrap:hover .platform-info {
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.item .item-wrap > .project-type-info {
+  position: absolute;
+  top: 92%;
+  right: 4%;
+  width: 100%;
+  text-align: right;
+  z-index: 3;
+  transform: translateY(-50%);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all ease;
+}
+
+.item .item-wrap:hover .project-type-info {
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.item .item-wrap > .project-type-info span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
 .item .item-wrap > .work-info h3 {
   font-size: 20px;
   margin-bottom: 0;
@@ -109,8 +156,8 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .item .item-wrap > .work-info span {
   font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
+  /* text-transform: uppercase; */
+  letter-spacing: .1rem;
 }
 
 .item .item-wrap:hover {
